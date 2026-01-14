@@ -24,7 +24,7 @@ jobs:
       run: nuget restore D365ForceSaveOnChangePlugin/D365ForceSaveOnChange.csproj
 
     - name: Build the plugin
-      run: msbuild D365ForceSaveOnChangePlugin/D365ForceSaveOnChange.csproj /p:Configuration=Release
+      run: msbuild D365ForceSaveOnChangePlugin/D365ForceSaveOnChangePlugin.csproj /p:Configuration=Release
 
     - name: Upload DLL artifact
       uses: actions/upload-artifact@v4
